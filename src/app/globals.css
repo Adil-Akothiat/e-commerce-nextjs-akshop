@@ -1,52 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true;
+  
+  --color-primary: oklch(55% 0.3 240);
+  --color-primary-content: oklch(98% 0.01 240);
+  /* ... other theme colors ... */
+};
 
-html,
-html body {
-  scroll-behavior: smooth;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body::-webkit-scrollbar {
-  width: 10px;
-}
-body::-webkit-scrollbar-thumb{
-  background-color: rgb(199, 199, 199);
-  border-radius: 5px;
-  border: 2px solid white;
-}
+  html, body {
+    scroll-behavior: smooth;
+  }
 
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(199, 199, 199);
+    border-radius: 5px;
+    border: 2px solid white;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  overflow-x: hidden;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .cust-h {
+    min-height: 80px;
   }
-}
-
-.cust-h {
-  min-height: 80px;
 }

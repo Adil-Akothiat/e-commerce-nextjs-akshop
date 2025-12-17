@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        loader: "custom",
-        loaderFile: "./images/ImageLoader.js"
+        // options config
+        remotePatterns: [
+            {
+                protocol:"https",
+                hostname:"cdn.dummyjson.com"
+            }
+        ]
     }
 };
 
