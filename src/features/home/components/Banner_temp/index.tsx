@@ -4,7 +4,7 @@ import TypeIt from "typeit-react";
 import Link from "next/link";
 import { useStringCategoriesQuery } from "@/features/products/hooks/hooks";
 
-const Banner = () => {
+export default function Banner () {
     const { data:categories } = useStringCategoriesQuery();
     return (
         <section className="relative">
@@ -44,5 +44,3 @@ const Banner = () => {
         </section>
     );
 }
-
-export default Banner;
