@@ -251,8 +251,6 @@ Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
 ---
 
-## 💼 How to Explain This in an Interview
-
 > "I implemented a **Feature-Based Clean Architecture** to ensure high cohesion and low coupling. By grouping components, hooks, and API logic by business domain—like Products, Cart, and Auth—I've made the codebase easier to navigate for teams and ensured that changes in one feature don't cause regressions in others.
 > 
 > I used a **hybrid state management** approach: TanStack Query for server state with automatic caching and revalidation, and Redux Toolkit for global client state like the shopping cart. This separation of concerns improves performance and makes the data flow predictable.
