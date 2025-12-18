@@ -1,6 +1,6 @@
 "use client";
 import "./home.css";
-import Banner from "./components/Banner/BannerWrapper";
+import Banner from "./components/Banner";
 import LatestProducts from "./components/latestProducts/LatestProducts";
 import OurBrands from "./components/OurBrands";
 import OrderSecurity from "./components/orderSecurity/OrderSecurity";
